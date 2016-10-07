@@ -31,7 +31,7 @@ Make the following directories:
 
 ------ 
 
-Required files at the first directory level (in addition to slurm and shell scripts):
+Required scripts at the first directory level (in addition to slurm and shell scripts):
 - [input xxx.fasta file of all sequence reads]
 - Calculate_avReadLen.py
 - Calculate_stats_v3.py
