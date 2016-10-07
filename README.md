@@ -40,6 +40,8 @@ Required files at the first directory level (in addition to slurm and shell scri
 - merge_LCAdiversity_clstrCOL_v2_singlesample.py
 - add_cRNAs_ReadCounts_Coverage_v3_singlesample.py
 
+------
+
 Shell Scripts (minor editing is needed. Shell scripts can be run independently of slurm if sample is small and a supercomputer is not needed):
 
 - step1_cRNA.sh: Compares the user-provided RNA sequence reads against four SILVA databses (transfer RNA (tRNA), 5S ribosomal RNA (rRNA), small subunit rRNA, and large subunit rRNA) through USEARCH (R.C. Edgar. 2010), then separates cRNA and ncRNA reads and dumps the contents into two .fasta files. ******MUST BE EDITED*****: add .fasta file containing all sequence reads. If the user desires, each line can be separated into individual slurm scripts made to run in parallel in the interest of speeding up the process.
@@ -66,6 +68,8 @@ Shell Scripts (minor editing is needed. Shell scripts can be run independently o
 
 - step6_ncRNA.sh: Constructs a table of taxonomic classifications corresponding to each contig cluster sequence query, along with read counts and coverage.
 
+------
+
 Slurm Scripts: Minor editing is needed
 
 - SlurmScript_step1_cRNA: *****MUST BE EDITED*****: user must add the desired input file name.
@@ -73,6 +77,8 @@ Slurm Scripts: Minor editing is needed
 - All other slurm scripts (SlurmScript_step2_cRNA, SlurmScript_step3_cRNA, SlurmScript_step4_cRNA, SlurmScript_step5_cRNA, SlurmScript_step6_cRNA, SlurmScript_step1_ncRNA, SlurmScript_step2_ncRNA, SlurmScript_step3_ncRNA, SlurmScript_step4_ncRNA, SlurmScript_step5_ncRNA, SlurmScript_step6_ncRNA) do not need to be edited.
 
 - Each script can be edited to specify the desired number of CPU cores and allotted run time.
+
+------
 
 Bibiliography:
 
