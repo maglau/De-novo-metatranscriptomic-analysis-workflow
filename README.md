@@ -1,13 +1,19 @@
 # De-novo-metatranscriptomic-analysis-workflow
 RNA-sequencing is an important tool to reveal the identity and metabolic capability of the active members. Total RNA (i.e. ribosomal and messenger RNAs) can be used to profile the taxonomic and functional diversity in an environmental sample. This workflow first separates rRNA from mRNA and assembles them independently. Each assembly is followed by annotation and statistics calculation.
 
+------
+
 Purpose: This set of shell scripts functions as a metatranscriptomics study of coding (cRNA) and non-coding RNA (ncRNA) sequence reads. They utilize the Trinity and Trans-ABySS assemblers to produce contig scaffolds for the cRNA and ncRNA reads, respectively (M. Grabber et al. 2011, G. Robertson et al. 2010). Protein-encoding genes (PEGs) and taxonomic classifications are outputted with corresponding coverage values by matching resulting contigs to the SILVA RNA database (http://www.arb-silva.de/).
+
+-----
 
 Make the following directories:
 
 - cRNA
 - ncRNA
 - cd-hit
+
+-----
 
 Required Algorithms:
 
