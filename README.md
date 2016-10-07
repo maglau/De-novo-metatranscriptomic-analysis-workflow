@@ -52,7 +52,7 @@ Shell Scripts (Shell scripts can be run independently of slurm scripts if sample
 
 - step2_cRNA.sh: Runs the Trinity assembler on the cRNA reads to generate contig scaffolds. Should be edited if a different assmebler is used. 
 
-- step3_cRNA.sh: Maps the cRNA dataset created in step1.sh to the cRNA assembly created in step2_cRNA.sh using Bowtie 2 version 2.2.5 (B. Langmead & S.L. Salzberg. 2012) and calculates contig coverage. 
+- step3_cRNA.sh: Maps the cRNA dataset created in step1.sh to the cRNA assembly created in step2_cRNA.sh using Bowtie 2 version 2.2.5 (B. Langmead & S.L. Salzberg. 2012) and calculates contig coverage and statistics. 
 
 - step4_cRNA.sh: Uses Prodigal to version 2.6.1 (D. Hyatt et al. 2010) to generate PEGs from cRNA transcript contigs, applies the CD-HIT algorithm version 4.6.4 (L. Fu et al. 2012) to cluster the resulting PEGs, and splits resulting PEG cluster file into subfiles of 2000 lines each for easier BLASTing.
 
