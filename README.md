@@ -70,7 +70,7 @@ Shell Scripts (Shell scripts can be run independently of slurm scripts if sample
 
 - step3_ncRNA.sh: Maps the ncRNA dataset created in step1.sh to the ncRNA assembly also created in step2_ncRNA.sh using Bowtie 2 version 2.2.5 (B. Langmead & S.L. Salzberg. 2012).
 
-- step4_ncRNA.sh: Calculates the ncRNA transcript contig coverage and applies the CD-HIT-EST (L. Weizhong & A. Godzik. 2006) algorithm to cluster the contigs.
+- step4_ncRNA.sh: Calculates the ncRNA transcript contig coverage and statistics, and applies the CD-HIT-EST (L. Weizhong & A. Godzik. 2006) algorithm to cluster the contigs.
 
 - step5_ncRNA.sh: Identifies chimeric gene sequences using UCHIME (R.C. Edgar et al. 2011) and splits resulting contig cluster file into subfiles of 2000 lines each for easier BLASTing. The ncRNA transcript contigs in clusters that were represented by a chimeric sequence are omitted from further analysis.
 
