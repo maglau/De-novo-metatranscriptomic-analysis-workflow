@@ -27,7 +27,6 @@ Required Databases:
 - trna_sequence_all.fasta (download from above and unzip the file)
 
 make the above fasta files into USEARCH databases using this command: 
-
   $ usearch -makeudb_usearch [database.fasta] -output [database.udb]
 
 ------
