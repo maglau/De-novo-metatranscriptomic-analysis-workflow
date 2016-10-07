@@ -46,7 +46,7 @@ Required files at the first directory level (in addition to slurm and shell scri
 
 ------
 
-Shell Scripts (Shell scripts can be run independently of slurm scripts if sample is small and a supercomputer is not needed. ******MUST BE EDITED*****:Paths to all algorithms and databases within shell scripts will need editing):
+Shell Scripts (Shell scripts can be run independently of slurm scripts if sample is small and a supercomputer is not needed. ******MUST BE EDITED*****: Paths to all algorithms and databases within shell scripts will need editing):
 
 - step1.sh: Compares the user-provided RNA sequence reads against four SILVA databses (small subunit rRNA and large subunit rRNA), and transfer RNA (tRNA) and 5S ribosomal RNA (rRNA), through USEARCH (R.C. Edgar. 2010), then separates cRNA and ncRNA reads and dumps the contents into two .fasta files. ******MUST BE EDITED*****: database names will need editing according to downloaded version. Add xxx.fasta file containing all sequence reads. If the user desires, each line can be separated into individual slurm scripts made to run in parallel in the interest of speeding up the process.
 
