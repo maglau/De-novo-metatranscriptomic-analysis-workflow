@@ -50,8 +50,7 @@ Shell Scripts (Shell scripts can be run independently of slurm scripts if sample
 
 - step1.sh: Compares the user-provided RNA sequence reads against four SILVA databses (small subunit rRNA and large subunit rRNA), and transfer RNA (tRNA) and 5S ribosomal RNA (rRNA), through USEARCH (R.C. Edgar. 2010), then separates cRNA and ncRNA reads and dumps the contents into two .fasta files. *****MUST BE EDITED*****: database names will need editing according to downloaded version. Add xxx.fasta file containing all sequence reads. If the user desires, each line can be separated into individual slurm scripts made to run in parallel in the interest of speeding up the process.
 
-~
-For processing cRNA reads:
+~ For processing cRNA reads:
 
 - step2_cRNA.sh: Runs the Trinity assembler on the cRNA reads to generate contig scaffolds. Should be edited if a different assmebler is used. 
 
@@ -63,9 +62,7 @@ For processing cRNA reads:
 
 - step6_cRNA.sh: Constructs a table of protein IDs corresponding to each PEG query, along with read counts and coverage.
 
-~
-
-For processing ncRNA reads:
+~ For processing ncRNA reads:
 
 - step2_ncRNA.sh: Runs the Trans-ABySS assembler on the ncRNA reads to generate contig scaffolds.
 
