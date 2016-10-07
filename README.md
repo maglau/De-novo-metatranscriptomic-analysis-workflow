@@ -50,6 +50,8 @@ Shell Scripts (Shell scripts can be run independently of slurm scripts if sample
 
 - step1.sh: Compares the user-provided RNA sequence reads against four SILVA databses (small subunit rRNA and large subunit rRNA), and transfer RNA (tRNA) and 5S ribosomal RNA (rRNA), through USEARCH (R.C. Edgar. 2010), then separates cRNA and ncRNA reads and dumps the contents into two .fasta files. *****MUST BE EDITED*****: database names will need editing according to downloaded version. Add xxx.fasta file containing all sequence reads. If the user desires, each line can be separated into individual slurm scripts made to run in parallel in the interest of speeding up the process.
 
+~
+
 - step2_cRNA.sh: Runs the Trinity assembler on the cRNA reads to generate contig scaffolds. Should be edited if a different assmebler is used. 
 
 - step3_cRNA.sh: Maps the cRNA dataset created in step1.sh to the cRNA assembly created in step2_cRNA.sh using Bowtie 2 version 2.2.5 (B. Langmead & S.L. Salzberg. 2012) and calculates contig coverage and statistics. 
