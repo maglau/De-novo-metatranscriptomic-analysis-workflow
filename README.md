@@ -88,7 +88,7 @@ Slurm Scripts (*****MUST BE EDITED*****: [user email] and [path to working direc
 
 ------
 
-Bibiliography:
+Bibliography:
 
 - Grabherr, M. G. et al. Full-length transcriptome assembly from RNA-Seq data without a reference genome. Nat. Biotechnol. 29, 644–652 (2011).
 
