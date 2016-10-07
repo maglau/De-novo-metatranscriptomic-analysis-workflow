@@ -32,7 +32,7 @@ Make the following directories:
 ------ 
 
 Required files at the first directory level (in addition to slurm and shell scripts):
-- [input .fasta file of all sequence reads]
+- [input xxx.fasta file of all sequence reads]
 - Calculate_avReadLen.py
 - Calculate_stats_v3.py
 - ParseSeqsIntoGroups_v4.py
@@ -48,7 +48,7 @@ Required files at the first directory level (in addition to slurm and shell scri
 
 Shell Scripts (minor editing is needed. Shell scripts can be run independently of slurm scripts if sample is small and a supercomputer is not needed):
 
-- step1.sh: Compares the user-provided RNA sequence reads against four SILVA databses (transfer RNA (tRNA), 5S ribosomal RNA (rRNA), small subunit rRNA, and large subunit rRNA) through USEARCH (R.C. Edgar. 2010), then separates cRNA and ncRNA reads and dumps the contents into two .fasta files. ******MUST BE EDITED*****: databases names will need editing according to downloaded version. Add .fasta file containing all sequence reads. If the user desires, each line can be separated into individual slurm scripts made to run in parallel in the interest of speeding up the process.
+- step1.sh: Compares the user-provided RNA sequence reads against four SILVA databses (small subunit rRNA and large subunit rRNA), and transfer RNA (tRNA) and 5S ribosomal RNA (rRNA), through USEARCH (R.C. Edgar. 2010), then separates cRNA and ncRNA reads and dumps the contents into two .fasta files. ******MUST BE EDITED*****: database names will need editing according to downloaded version. Add xxx.fasta file containing all sequence reads. If the user desires, each line can be separated into individual slurm scripts made to run in parallel in the interest of speeding up the process.
 
 - step2_cRNA.sh: Runs the Trinity assembler on the cRNA reads to generate contig scaffolds.
 
