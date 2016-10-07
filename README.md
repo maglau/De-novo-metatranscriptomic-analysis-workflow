@@ -18,8 +18,14 @@ Required Algorithms:
 - cd-hit (http://weizhongli-lab.org/cd-hit/download.php)
 
 Required Databases:
-- SILVA (https://www.arb-silva.de/download/archive/)
+- SILVA (https://www.arb-silva.de/download/archive/). *****MUST BE EDITED*****: substitute the "U" in the fasta file with "T" using this command:
+  $ sed -i 's/U/T/g' inputfile.fasta (e.g. SSUParc119_ATCG.fasta)"
 - BLAST non-redundant protein database (nr) (ways to obtain the database: https://www.ncbi.nlm.nih.gov/Web/Newsltr/V14N2/BLupdate.html)
+- 5SrRNA.fasta (download from above)
+- trna_sequence_all.fasta (download from above and unzip the file)
+
+make the above fasta files into USEARCH databases using this command: 
+$ usearch -makeudb_usearch [database.fasta] -output [database.udb]
 
 ------
 
@@ -51,7 +57,7 @@ Required scripts at the first directory level (in addition to slurm and shell sc
 
 Shell Scripts (Shell scripts can be run independently of slurm scripts if sample is small and a supercomputer is not needed. *****MUST BE EDITED*****: Paths to all algorithms and databases within shell scripts will need editing):
 
-- step1.sh: Compares the user-provided RNA sequence reads against four SILVA databses (small subunit rRNA and large subunit rRNA), and transfer RNA (tRNA) and 5S ribosomal RNA (rRNA), through USEARCH (R.C. Edgar. 2010), then separates cRNA and ncRNA reads and dumps the contents into two .fasta files. *****MUST BE EDITED*****: database names will need editing according to downloaded version. Add xxx.fasta file containing all sequence reads. If the user desires, each line can be separated into individual slurm scripts made to run in parallel in the interest of speeding up the process.
+- step1.sh: Compares the user-provided RNA sequence reads against four SILVA databses (small subunit rRNA and large subunit rRNA), and transfer RNA (tRNA) (Abe et al. 2011, 2014) and 5S ribosomal RNA (rRNA) (Szymanski et al. 2002), through USEARCH (R.C. Edgar. 2010), then separates cRNA and ncRNA reads and dumps the contents into two .fasta files. *****MUST BE EDITED*****: database names will need editing according to downloaded version. Add xxx.fasta file containing all sequence reads. If the user desires, each line can be separated into individual slurm scripts made to run in parallel in the interest of speeding up the process.
 
 
 ~ For processing cRNA reads:
@@ -110,3 +116,10 @@ Bibliography:
 - Weizhong, L & Godzik, A.  Cd-hit: a fast program for clustering and comparing large sets of protein or nucleotide sequences. Bioinformatics 22, 1658-1659 (2006).
 
 - Edgar, R. C., Haas, B. J., Clemente, J. C., Quince, C. & Knight, R. UCHIME improves sensitivity and speed of chimera detection. Bioinformatics 27, 2194–2200 (2011).
+
+- Abe T, Ikemura T, Sugahara J et al. tRNADB-CE 2011: tRNA gene database curated manually by experts. Nucleic Acids Res 2011;39:D210–3.
+
+- Abe T, Inokuchi H, Yamada Y et al. tRNADB-CE: tRNA gene database well-timed in the era of big sequence data. Front Genet 2014;5:114.
+
+- Szymanski M, Barciszewska MZ, Erdmann VA et al. 5S ribosomal RNA database. Nucleic Acids Res 2002;30:176–8.
+
