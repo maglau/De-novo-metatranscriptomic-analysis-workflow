@@ -10,7 +10,7 @@ Purpose: This set of shell scripts functions as a metatranscriptomics study of c
 Required Algorithms:
 
 - USEARCH (http://www.drive5.com/usearch/download.html)
-- BLAST (https://blast.ncbi.nlm.nih.gov/Blast.cgi)
+- BLAST (https://blast.ncbi.nlm.nih.gov/Blast.cgi?CMD=Web&PAGE_TYPE=BlastDocs&DOC_TYPE=Download)
 - Prodigal (http://prodigal.ornl.gov/downloads.php)
 - Trinity (https://github.com/trinityrnaseq/trinityrnaseq/wiki)
 - Trans-ABySS (https://github.com/bcgsc/transabyss)
@@ -19,7 +19,7 @@ Required Algorithms:
 
 Required Databases:
 - SILVA (https://www.arb-silva.de/download/archive/)
-- BLAST 
+- BLAST non-redundant protein database (nr) (ways to obtain the database: https://www.ncbi.nlm.nih.gov/Web/Newsltr/V14N2/BLupdate.html)
 
 ------
 
