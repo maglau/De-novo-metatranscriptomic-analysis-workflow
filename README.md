@@ -45,6 +45,7 @@ Required files at the first directory level (in addition to slurm and shell scri
 - add_cRNAs_ReadCounts_Coverage_v3_singlesample.py
 - add_ncRNAs_ReadCounts_Coverage_v2_singlesample.py
 - blast-basedLCA80.py
+- blast-majority_v3.py
 
 ------
 
