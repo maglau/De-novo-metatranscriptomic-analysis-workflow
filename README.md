@@ -43,6 +43,7 @@ Required files at the first directory level (in addition to slurm and shell scri
 - merge_BestRep_clstrCOL_v2_singlesample.py
 - merge_LCAdiversity_clstrCOL_v2_singlesample.py
 - add_cRNAs_ReadCounts_Coverage_v3_singlesample.py
+- add_ncRNAs_ReadCounts_Coverage_v2_singlesample.py
 
 ------
 
