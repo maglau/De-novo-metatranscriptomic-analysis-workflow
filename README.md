@@ -17,6 +17,10 @@ Required Algorithms:
 - ABySS (http://www.bcgsc.ca/platform/bioinfo/software/abyss)
 - cd-hit (http://weizhongli-lab.org/cd-hit/download.php)
 
+Required Databases:
+- SILVA (https://www.arb-silva.de/download/archive/)
+- BLAST 
+
 ------
 
 Make the following directories:
@@ -44,7 +48,7 @@ Required files at the first directory level (in addition to slurm and shell scri
 
 Shell Scripts (minor editing is needed. Shell scripts can be run independently of slurm scripts if sample is small and a supercomputer is not needed):
 
-- step1_cRNA.sh: Compares the user-provided RNA sequence reads against four SILVA databses (transfer RNA (tRNA), 5S ribosomal RNA (rRNA), small subunit rRNA, and large subunit rRNA) through USEARCH (R.C. Edgar. 2010), then separates cRNA and ncRNA reads and dumps the contents into two .fasta files. ******MUST BE EDITED*****: add .fasta file containing all sequence reads. If the user desires, each line can be separated into individual slurm scripts made to run in parallel in the interest of speeding up the process.
+- step1.sh: Compares the user-provided RNA sequence reads against four SILVA databses (transfer RNA (tRNA), 5S ribosomal RNA (rRNA), small subunit rRNA, and large subunit rRNA) through USEARCH (R.C. Edgar. 2010), then separates cRNA and ncRNA reads and dumps the contents into two .fasta files. ******MUST BE EDITED*****: databases names will need editing according to downloaded version. Add .fasta file containing all sequence reads. If the user desires, each line can be separated into individual slurm scripts made to run in parallel in the interest of speeding up the process.
 
 - step2_cRNA.sh: Runs the Trinity assembler on the cRNA reads to generate contig scaffolds.
 
