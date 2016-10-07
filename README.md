@@ -80,7 +80,7 @@ Shell Scripts (Shell scripts can be run independently of slurm scripts if sample
 
 ------
 
-Slurm Scripts (*****MUST BE EDITED*****: [user email] in all slurm script headings must be replaced with the user's email: 
+Slurm Scripts (*****MUST BE EDITED*****: [user email] and [path to working directory] in all slurm script headings must be replaced with desired email and path: 
 
 - SlurmScript_step1: *****MUST BE EDITED*****: user must add the desired input file name.
 
