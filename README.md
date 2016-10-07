@@ -60,17 +60,19 @@ Shell Scripts (minor editing is needed. Shell scripts can be run independently o
 
 - step6_cRNA.sh: Constructs a table of protein IDs corresponding to each PEG query, along with read counts and coverage.
 
-- step1_ncRNA.sh: Runs the Trans-ABySS assembler on the ncRNA reads to generate contig scaffolds.
+~
 
-- step2_ncRNA.sh: Maps the ncRNA dataset created in step1_ncRNA.sh to the ncRNA assembly also created in step1_ncRNA.sh using Bowtie 2 version 2.2.5 (B. Langmead & S.L. Salzberg. 2012).
+- step2_ncRNA.sh: Runs the Trans-ABySS assembler on the ncRNA reads to generate contig scaffolds.
 
-- step3_ncRNA.sh: Calculates the ncRNA transcript contig coverage and applies the CD-HIT-EST (L. Weizhong & A. Godzik. 2006) algorithm to cluster the contigs.
+- step3_ncRNA.sh: Maps the ncRNA dataset created in step1_ncRNA.sh to the ncRNA assembly also created in step1_ncRNA.sh using Bowtie 2 version 2.2.5 (B. Langmead & S.L. Salzberg. 2012).
 
-- step4_ncRNA.sh: Identifies chimeric gene sequences using UCHIME (R.C. Edgar et al. 2011) and splits resulting contig cluster file into subfiles of 2000 lines each for easier BLASTing. The ncRNA transcript contigs in clusters that were represented by a chimeric sequence are omitted from further analysis.
+- step4_ncRNA.sh: Calculates the ncRNA transcript contig coverage and applies the CD-HIT-EST (L. Weizhong & A. Godzik. 2006) algorithm to cluster the contigs.
 
-- step5_ncRNA.sh: Searches the longest sequence in each contig cluster against the rRNA database comprised of SILVA SSU and LSU sequences for the best ten hits using BLASTn (C. Camacho et al. 2009) to obtain consensus rRNA identities by majority rule, and taxonomic rankings by the lowest common ancestor (LCA) principle.*****MUST BE EDITED*****: User must add lines to process each subfile; the number of lines will depend on the size of the user’s input file as each subfile is automatically set to be 2000 lines long.
+- step5_ncRNA.sh: Identifies chimeric gene sequences using UCHIME (R.C. Edgar et al. 2011) and splits resulting contig cluster file into subfiles of 2000 lines each for easier BLASTing. The ncRNA transcript contigs in clusters that were represented by a chimeric sequence are omitted from further analysis.
 
-- step6_ncRNA.sh: Constructs a table of taxonomic classifications corresponding to each contig cluster sequence query, along with read counts and coverage.
+- step6_ncRNA.sh: Searches the longest sequence in each contig cluster against the rRNA database comprised of SILVA SSU and LSU sequences for the best ten hits using BLASTn (C. Camacho et al. 2009) to obtain consensus rRNA identities by majority rule, and taxonomic rankings by the lowest common ancestor (LCA) principle.*****MUST BE EDITED*****: User must add lines to process each subfile; the number of lines will depend on the size of the user’s input file as each subfile is automatically set to be 2000 lines long.
+
+- step7_ncRNA.sh: Constructs a table of taxonomic classifications corresponding to each contig cluster sequence query, along with read counts and coverage.
 
 ------
 
