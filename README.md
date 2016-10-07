@@ -54,9 +54,9 @@ Shell Scripts (Shell scripts can be run independently of slurm scripts if sample
 
 - step3_cRNA.sh: Maps the cRNA dataset created in step1.sh to the cRNA assembly created in step2_cRNA.sh using Bowtie 2 version 2.2.5 (B. Langmead & S.L. Salzberg. 2012) and calculates contig coverage and statistics. 
 
-- step4_cRNA.sh: Uses Prodigal to version 2.6.1 (D. Hyatt et al. 2010) to generate PEGs from cRNA transcript contigs, applies the CD-HIT algorithm version 4.6.4 (L. Fu et al. 2012) to cluster the resulting PEGs, and splits resulting PEG cluster file into subfiles of 2000 lines each for easier BLASTing.
+- step4_cRNA.sh: Uses Prodigal version 2.6.1 (D. Hyatt et al. 2010) to generate PEGs from cRNA transcript contigs, applies the CD-HIT algorithm version 4.6.4 (L. Fu et al. 2012) to cluster the resulting PEGs, and splits resulting PEG cluster file into subfiles of 2000 lines (can be edited) to create files of a more manageable size for BLAST search.
 
-- step5_cRNA.sh: Searches the longest sequence in each PEG cluster against the NCBI non-redundant protein (nr) database (http://www.ncbi.nlm.nih.gov/refseq/) for the best ten hits using BLASTp (C. Camacho et al. 2009) to obtain consensus protein identities. *****MUST BE EDITED*****: User must add lines to process each subfile; the number of lines will depend on the size of the user’s input file as each subfile is automatically set to be 2000 lines long.
+- step5_cRNA.sh: Searches the representative (i.e. longest) sequence in each PEG cluster against the NCBI non-redundant protein (nr) database (http://www.ncbi.nlm.nih.gov/refseq/) for the best ten hits using BLASTp (C. Camacho et al. 2009) to obtain consensus protein identities. *****MUST BE EDITED*****: User must add lines to process each subfile; the number of lines will depend on the size of the user’s input file as each subfile is automatically set to be 2000 lines long.
 
 - step6_cRNA.sh: Constructs a table of protein IDs corresponding to each PEG query, along with read counts and coverage.
 
