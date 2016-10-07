@@ -74,17 +74,15 @@ Shell Scripts (Shell scripts can be run independently of slurm scripts if sample
 
 - step5_ncRNA.sh: Identifies chimeric gene sequences using UCHIME (R.C. Edgar et al. 2011) and splits resulting contig cluster file into subfiles of 2000 lines each for easier BLASTing. The ncRNA transcript contigs in clusters that were represented by a chimeric sequence are omitted from further analysis.
 
-- step6_ncRNA.sh: Searches the longest sequence in each contig cluster against the rRNA database comprised of SILVA SSU and LSU sequences for the best ten hits using BLASTn (C. Camacho et al. 2009) to obtain consensus rRNA identities by majority rule, and taxonomic rankings by the lowest common ancestor (LCA) principle.*****MUST BE EDITED*****: User must add lines to process each subfile; the number of lines will depend on the size of the user’s input file as each subfile is automatically set to be 2000 lines long.
+- step6_ncRNA.sh: Searches the representative sequence in each contig cluster against the rRNA database comprised of SILVA SSU and LSU sequences for the best ten hits using BLASTn (C. Camacho et al. 2009) to obtain consensus rRNA identities by majority rule, and taxonomic rankings by the lowest common ancestor (LCA) principle.*****MUST BE EDITED*****: User must add lines to process each subfile; the number of lines will depend on the size of the user’s input file as each subfile is automatically set to be 2000 lines long.
 
 - step7_ncRNA.sh: Constructs a table of taxonomic classifications corresponding to each contig cluster sequence query, along with read counts and coverage.
 
 ------
 
-Slurm Scripts: Minor editing is needed
+Slurm Scripts (*****MUST BE EDITED*****: [user email] in all slurm script headings must be replaced with the user's email: 
 
-- SlurmScript_step1_cRNA: *****MUST BE EDITED*****: user must add the desired input file name.
-
-- All other slurm scripts (SlurmScript_step2_cRNA, SlurmScript_step3_cRNA, SlurmScript_step4_cRNA, SlurmScript_step5_cRNA, SlurmScript_step6_cRNA, SlurmScript_step1_ncRNA, SlurmScript_step2_ncRNA, SlurmScript_step3_ncRNA, SlurmScript_step4_ncRNA, SlurmScript_step5_ncRNA, SlurmScript_step6_ncRNA) do not need to be edited.
+- SlurmScript_step1: *****MUST BE EDITED*****: user must add the desired input file name.
 
 - Each script can be edited to specify the desired number of CPU cores and allotted run time.
 
