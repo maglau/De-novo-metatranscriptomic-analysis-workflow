@@ -19,7 +19,9 @@ Required Algorithms:
 
 Required Databases:
 - SILVA (https://www.arb-silva.de/download/archive/). *****MUST BE EDITED*****: substitute the "U" in the fasta file with "T" using this command:
-  $ sed -i 's/U/T/g' inputfile.fasta (e.g. SSUParc119_ATCG.fasta)"
+
+$ sed -i 's/U/T/g' inputfile.fasta (e.g. SSUParc119_ATCG.fasta)"
+
 - BLAST non-redundant protein database (nr) (ways to obtain the database: https://www.ncbi.nlm.nih.gov/Web/Newsltr/V14N2/BLupdate.html)
 - 5SrRNA.fasta (download from above)
 - trna_sequence_all.fasta (download from above and unzip the file)
