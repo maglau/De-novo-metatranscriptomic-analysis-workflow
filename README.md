@@ -99,27 +99,26 @@ Slurm Scripts (*****MUST BE EDITED*****: [user email] and [path to working direc
 
 Bibliography:
 
-- Grabherr, M. G. et al. Full-length transcriptome assembly from RNA-Seq data without a reference genome. Nat. Biotechnol. 29, 644–652 (2011).
+- Abe, T., Ikemura, T., Sugahara, J., Kanai, A., Ohara, Y., Uehara, H., Kinouchi, M., Kanaya, S. Yamada, Y. Muto, A. & Inokuchi, H. tRNADB-CE 2011: tRNA gene database curated manually by experts. Nucleic Acids Res. 39, D210–D213 (2011).
 
-- Robertson, G. et al. De novo assembly and analysis of RNA-seq data. Nat. Methods 7, 909–912 (2010).
-
-- Edgar, R. C. Search and clustering orders of magnitude faster than BLAST. Bioinformatics 26, 2460–2461 (2010).
-
-- Langmead, B. & Salzberg, S. L. Fast gapped-read alignment with Bowtie 2. Nat. Methods 9, 357–359 (2012).
-
-- Hyatt, D. et al. Prodigal: prokaryotic gene recognition and translation initiation site identification. BMC Bioinformatics 11, 119 (2010).
-
-- Fu, L., Niu, B., Zhu, Z., Wu, S. & Li, W. CD-HIT: accelerated for clustering the next-generation sequencing data. Bioinformatics 28, 3150–3152 (2012).
+- Abe, T., Inokuchi, H., Yamada, Y., Muto, A., Iwasaki, Y., and Ikemura, T. tRNADB-CE: tRNA gene database well-timed in the era of big sequence data. Front. Genet. 5, 114 (2014).
 
 - Camacho, C. et al. BLAST+: architecture and applications. BMC Bioinformatics 10, 421 (2009).
 
-- Weizhong, L & Godzik, A.  Cd-hit: a fast program for clustering and comparing large sets of protein or nucleotide sequences. Bioinformatics 22, 1658-1659 (2006).
+- Edgar, R. C. Search and clustering orders of magnitude faster than BLAST. Bioinformatics 26, 2460–2461 (2010).
 
 - Edgar, R. C., Haas, B. J., Clemente, J. C., Quince, C. & Knight, R. UCHIME improves sensitivity and speed of chimera detection. Bioinformatics 27, 2194–2200 (2011).
 
-- Abe T, Ikemura T, Sugahara J et al. tRNADB-CE 2011: tRNA gene database curated manually by experts. Nucleic Acids Res 2011;39:D210–3.
+- Fu, L., Niu, B., Zhu, Z., Wu, S. & Li, W. CD-HIT: accelerated for clustering the next-generation sequencing data. Bioinformatics 28, 3150–3152 (2012).
 
-- Abe T, Inokuchi H, Yamada Y et al. tRNADB-CE: tRNA gene database well-timed in the era of big sequence data. Front Genet 2014;5:114.
+- Grabherr, M. G. et al. Full-length transcriptome assembly from RNA-Seq data without a reference genome. Nat. Biotechnol. 29, 644–652 (2011).
 
-- Szymanski M, Barciszewska MZ, Erdmann VA et al. 5S ribosomal RNA database. Nucleic Acids Res 2002;30:176–8.
+- Hyatt, D. et al. Prodigal: prokaryotic gene recognition and translation initiation site identification. BMC Bioinformatics 11, 119 (2010).
 
+- Langmead, B. & Salzberg, S. L. Fast gapped-read alignment with Bowtie 2. Nat. Methods 9, 357–359 (2012).
+
+- Robertson, G. et al. De novo assembly and analysis of RNA-seq data. Nat. Methods 7, 909–912 (2010).
+
+- Szymanski, M., Barciszewska, M.Z., Erdmann, V.A., and Barciszewski, J. 5S ribosomal RNA database. Nucleic Acids Res. 30, 176–178 (2002).
+
+- Weizhong, L & Godzik, A. Cd-hit: a fast program for clustering and comparing large sets of protein or nucleotide sequences. Bioinformatics 22, 1658-1659 (2006).
