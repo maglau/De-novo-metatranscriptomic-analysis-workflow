@@ -65,7 +65,7 @@ Shell Scripts (Shell scripts can be run independently of slurm scripts if sample
 
 ~ For processing cRNA reads:
 
-- step2_cRNA.sh: Runs the Trinity assembler on the cRNA reads to generate contig scaffolds. Should be edited if a different assmebler is used. 
+- step2_cRNA.sh: Runs the Trinity assembler on the cRNA reads to generate contig scaffolds. Should be edited if a different assembler is used. 
 
 - step3_cRNA.sh: Maps the cRNA dataset created in step1.sh to the cRNA assembly created in step2_cRNA.sh using Bowtie 2 version 2.2.5 (B. Langmead & S.L. Salzberg. 2012) and calculates contig coverage and statistics. 
 
